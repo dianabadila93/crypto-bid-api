@@ -1,7 +1,7 @@
 from src.api.controllers.bid_controller import blueprint \
     as bids_blueprint
 from flask import Blueprint
-from flask_restplus import Api
+from flask_restx import Api
 from src.api.controllers.bid_controller import bidsNamespace
 
 api_extension = Api(

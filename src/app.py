@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_restplus import Api
+from flask_restx import Api
 from src.api.controllers.bid_controller import blueprint \
     as bids_blueprint
 
