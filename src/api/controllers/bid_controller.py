@@ -22,7 +22,7 @@ bids_model = bidsNamespace.model('Bid', {
 })
 
 @bidsNamespace.route('')
-class Bid(Resource): 
+class Bids(Resource): 
     @bidsNamespace.response(500, 'Internal Server Error')
     def get(self):
         '''List all bids'''
@@ -36,7 +36,7 @@ class Bid(Resource):
 
 
 @bidsNamespace.route('/<int:id>')
-class Bids(Resource):
+class Bid(Resource):
     @bidsNamespace.response(400, 'Entity with the given name already exists')
     @bidsNamespace.response(404, 'Entity not found')
     @bidsNamespace.response(500, 'Internal Server error')
