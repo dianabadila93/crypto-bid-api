@@ -4,7 +4,7 @@ from flask_restx import Namespace, Resource, fields
 
 blueprint = Blueprint('bids_api', __name__, url_prefix='/bids_api')
 
-bidsNamespace = Namespace('BIDS', 'Bids related endpoints')
+bidsNamespace = Namespace('Bids', 'Bids related endpoints')
 bid_example = {'id': 1, 'name': 'Bid 1', 'description': 'Bid 1 description'}
 bids_model = bidsNamespace.model('Bid', {
     'id': fields.Integer(
